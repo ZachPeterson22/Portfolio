@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  border: black 1px solid;
+}
+
+.nav-item {
+  border: black 1px solid;
+}
+
+.section-a {
+  border: black 1px solid;
+  height: 250px;
+}
+
+.img-container {
+  border: black 1px solid;
+  width: 150px;
+  height: 150px;
+}
+
+.section-b {
+  border: black 1px solid;
+}
+
+.item {
+  border: black 1px solid;
+  height: 150px;
+  width: 150px;
+}
+
+.parallax1 {
+  background-image: url("https://images.pexels.com/photos/131014/pexels-photo-131014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 400px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+}

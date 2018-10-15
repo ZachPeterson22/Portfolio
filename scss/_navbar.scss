@@ -1,0 +1,30 @@
+nav {
+  // maybe get rid of sticky position???
+  position: sticky;
+  top: 0px;
+  background-color: $primary-color;
+  z-index: 10;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .nav-item {
+      text-align: center;
+      width: 100px;
+      padding: 10px 16px;
+      &:hover {
+        background-color: black;
+        color: white;
+        cursor: default;
+      }
+    }
+  }
+}
+
+footer {
+  .signautre {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  border: black 1px solid; }
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 10; }
+  nav .navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav .navbar .nav-item {
+      text-align: center;
+      width: 100px;
+      padding: 10px 16px; }
+      nav .navbar .nav-item:hover {
+        background-color: black;
+        color: white;
+        cursor: default; }
+
+footer .signautre {
+  padding: 5px; }
+
+main .section-a {
+  text-align: center;
+  font-size: 48px;
+  padding: 10px; }
+
+main .section-b .b-title {
+  font-size: 36px;
+  text-align: center;
+  padding: 5px; }
+
+main .section-c .projects-title {
+  font-size: 36px;
+  text-align: center;
+  padding: 5px; }
+
+main .section-c .projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px; }
+  main .section-c .projects .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 0;
+    width: 300px; }
+    main .section-c .projects .item .item-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      transition: all 0.5s linear; }
+      main .section-c .projects .item .item-overlay .project-info {
+        visibility: hidden;
+        border: none;
+        color: white;
+        opacity: 0;
+        transition: all 0.5s linear; }
+      main .section-c .projects .item .item-overlay:hover {
+        background-color: rgba(0, 0, 0, 0.85); }
+        main .section-c .projects .item .item-overlay:hover .project-info {
+          visibility: visible;
+          opacity: 1; }
+
+main .parallax1 {
+  background-image: url("../images/parallaximg2.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main .parallax1 .overlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+    main .parallax1 .overlay .img-container {
+      border: none;
+      width: 200px;
+      margin: 0 auto;
+      z-index: 10; }
+      main .parallax1 .overlay .img-container img {
+        border-radius: 50%; }
+      main .parallax1 .overlay .img-container .name {
+        background-color: white;
+        text-align: center;
+        padding: 5px; }
+
+main .parallax2 {
+  background-image: url("../images/parallaximg1.jpeg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main .parallax2 .overlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+html {
+  border: none; }
+
+body {
+  margin: 0;
+  border: none;
+  background-color: white; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
