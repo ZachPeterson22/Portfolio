@@ -1,9 +1,18 @@
 * {
   box-sizing: border-box;
-  border: black 1px solid;
 }
 
-$primary-color: white;
+$primary-color: #71eeb8;
+$secondary-color: #bbf1d9;
+
+@mixin borderBlack {
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+@mixin borderWhite {
+  border: white 1px solid;
+}
 
 @import "navbar";
 @import "content";
@@ -15,7 +24,7 @@ html {
 body {
   margin: 0;
   border: none;
-  background-color: $primary-color;
+  background-color: white;
 }
 
 img {
