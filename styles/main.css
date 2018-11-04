@@ -31,24 +31,24 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 25px; }
+  padding: 50px 25px;
+  text-align: center; }
   footer .signautre {
     margin: 5px;
     padding: 5px;
     font-size: 24px; }
   footer .contact {
     text-align: center;
-    margin: 5px; }
-    footer .contact .contact-title {
-      font-size: 20px;
-      margin: 5px; }
+    margin: 5px;
+    font-size: 22px; }
   footer .socials {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     margin: 5px; }
     footer .socials a .fa {
       border-radius: 50%;
-      padding: 10px;
+      padding: 5px;
       font-size: 22px;
       text-align: center;
       text-decoration: none;
@@ -58,6 +58,8 @@ footer {
       footer .socials a .fa.fa-github {
         color: black; }
       footer .socials a .fa.fa-file-pdf-o {
+        color: black; }
+      footer .socials a .fa.fa-envelope {
         color: black; }
   footer .credits {
     text-align: center;
@@ -88,9 +90,9 @@ main .section-b .b-content {
   justify-content: space-around;
   align-items: center;
   background-color: #bbf1d9;
-  height: 200px;
+  min-height: 200px;
   width: 70%;
-  margin: 0 auto; }
+  margin: 25px auto; }
   main .section-b .b-content .content-info {
     display: flex;
     justify-content: center;
@@ -197,6 +199,12 @@ main .parallax1 {
         background-color: white;
         text-align: center;
         padding: 5px; }
+
+@media only screen and (max-width: 600px) {
+  main .parallax1 {
+    background-attachment: initial; }
+  main .section-c .parallax2 {
+    background-attachment: initial; } }
 
 html {
   border: none; }
