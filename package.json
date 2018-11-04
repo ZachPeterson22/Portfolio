@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://zachpeterson22.github.io/Portfolio/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o styles/ --recursive"
+    "sass": "node-sass -w scss/ -o styles/ --recursive",
+    "delpoy": "gh-pages index.html"
   },
   "keywords": [],
   "author": "",
