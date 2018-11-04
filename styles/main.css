@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 nav {
   position: sticky;
@@ -34,25 +36,35 @@ footer {
     margin: 5px;
     padding: 5px;
     font-size: 24px; }
-  footer .credits {
+  footer .contact {
     text-align: center;
     margin: 5px; }
-    footer .credits .photo-credit {
-      padding: 5px; }
+    footer .contact .contact-title {
+      font-size: 20px;
+      margin: 5px; }
   footer .socials {
     display: flex;
     flex-direction: row;
     margin: 5px; }
-    footer .socials .fa {
+    footer .socials a .fa {
       border-radius: 50%;
       padding: 10px;
-      font-size: 20px;
+      font-size: 22px;
       text-align: center;
       text-decoration: none;
       margin: 5px; }
-      footer .socials .fa.fa-linkedin {
-        background: #007bb5;
-        color: white; }
+      footer .socials a .fa.fa-linkedin {
+        color: black; }
+      footer .socials a .fa.fa-github {
+        color: black; }
+      footer .socials a .fa.fa-file-pdf-o {
+        color: black; }
+  footer .credits {
+    text-align: center;
+    margin: 5px; }
+    footer .credits .photo-credit {
+      font-size: 12px;
+      padding: 5px; }
 
 main .section-a {
   border-top: black 2px solid;
@@ -72,11 +84,23 @@ main .section-b .b-title {
 
 main .section-b .b-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background-color: #bbf1d9;
-  height: 150px; }
+  height: 200px;
+  width: 70%;
+  margin: 0 auto; }
+  main .section-b .b-content .content-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px; }
+    main .section-b .b-content .content-info.bio {
+      text-align: center; }
+    main .section-b .b-content .content-info.bio2 {
+      text-align: center; }
 
 main .section-c .projects-title {
   border-top: black 2px solid;
@@ -109,7 +133,7 @@ main .section-c .parallax2 {
         display: flex;
         flex-direction: column;
         margin: 15px;
-        width: 300px; }
+        width: 350px; }
         main .section-c .parallax2 .overlay .projects .item .item-overlay {
           position: absolute;
           top: 0;
@@ -118,19 +142,32 @@ main .section-c .parallax2 {
           height: 100%;
           z-index: 100;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
+          justify-content: space-evenly;
           align-items: center;
           text-align: center;
           transition: all 0.5s linear; }
-          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info {
+          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info-title,
+          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info,
+          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info-technologies {
             visibility: hidden;
             border: none;
             color: white;
             opacity: 0;
             transition: all 0.5s linear; }
+          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info-title {
+            font-size: 24px;
+            border-bottom: white 1px solid; }
+          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info {
+            width: 80%;
+            margin: 0 auto; }
+          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info-technologies .technology {
+            font-size: 12px; }
           main .section-c .parallax2 .overlay .projects .item .item-overlay:hover {
-            background-color: rgba(0, 0, 0, 0.75); }
-            main .section-c .parallax2 .overlay .projects .item .item-overlay:hover .project-info {
+            background-color: rgba(0, 0, 0, 0.8); }
+            main .section-c .parallax2 .overlay .projects .item .item-overlay:hover .project-info-title,
+            main .section-c .parallax2 .overlay .projects .item .item-overlay:hover .project-info,
+            main .section-c .parallax2 .overlay .projects .item .item-overlay:hover .project-info-technologies {
               visibility: visible;
               opacity: 1; }
 
@@ -154,6 +191,7 @@ main .parallax1 {
       margin: 0 auto;
       z-index: 10; }
       main .parallax1 .overlay .img-container img {
+        border: black 2px solid;
         border-radius: 50%; }
       main .parallax1 .overlay .img-container .name {
         background-color: white;
@@ -166,7 +204,7 @@ html {
 body {
   margin: 0;
   border: none;
-  background-color: white; }
+  background-color: #bbf1d9; }
 
 img {
   display: block;

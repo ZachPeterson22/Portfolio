@@ -36,28 +36,44 @@ footer {
     padding: 5px;
     font-size: 24px;
   }
-  .credits {
+  .contact {
     text-align: center;
     margin: 5px;
-    .photo-credit {
-      padding: 5px;
+    .contact-title {
+      font-size: 20px;
+      margin: 5px;
     }
   }
   .socials {
     display: flex;
     flex-direction: row;
     margin: 5px;
-    .fa {
-      border-radius: 50%;
-      padding: 10px;
-      font-size: 20px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px;
-      &.fa-linkedin {
-        background: #007bb5;
-        color: white;
+    a {
+      .fa {
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px;
+        &.fa-linkedin {
+          color: black;
+        }
+        &.fa-github {
+          color: black;
+        }
+        &.fa-file-pdf-o {
+          color: black;
+        }
       }
+    }
+  }
+  .credits {
+    text-align: center;
+    margin: 5px;
+    .photo-credit {
+      font-size: 12px;
+      padding: 5px;
     }
   }
 }
