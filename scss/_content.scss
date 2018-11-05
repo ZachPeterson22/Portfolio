@@ -29,14 +29,42 @@ main {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin: 10px;
         font-size: 18px;
-        // @include borderBlack();
-        // flex: 1;
         &.bio {
           text-align: center;
         }
         &.bio2 {
           text-align: center;
+        }
+      }
+      .my-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+        .skills-title {
+          font-size: 24px;
+          padding: 10px;
+        }
+        .skills {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          max-height: 150px;
+          width: 350px;
+          .skill {
+            // border: black 1px solid;
+            font-size: 14px;
+            padding: 5px;
+            margin: 2px;
+            width: 100px;
+          }
         }
       }
     }
@@ -87,40 +115,41 @@ main {
               z-index: 100;
               display: flex;
               flex-direction: column;
-              justify-content: space-evenly;
+              justify-content: center;
               align-items: center;
+              // background-color: rgba(black, 0.4);
               text-align: center;
               transition: all 0.5s linear;
               .project-info-title,
-              .project-info,
-              .project-info-technologies {
-                visibility: hidden;
+              .project-info {
                 border: none;
                 color: white;
                 opacity: 0;
                 transition: all 0.5s linear;
               }
               .project-info-title {
+                background-color: rgba(black, 1);
+                border-radius: 5px;
+                padding: 5px;
                 font-size: 24px;
-                border-bottom: white 1px solid;
+                opacity: 1;
               }
               .project-info {
                 width: 80%;
                 margin: 0 auto;
-              }
-              .project-info-technologies {
-                .technology-title {
-                }
-                .technology {
-                  font-size: 12px;
-                }
+                display: none;
               }
               &:hover {
                 background-color: rgba(black, 0.8);
-                .project-info-title,
-                .project-info,
-                .project-info-technologies {
-                  visibility: visible;
+                justify-content: space-evenly;
+                .project-info-title {
+                  background: none;
+                  border-radius: 0;
+                  border-bottom: white 1px solid;
+                  padding: 0;
+                }
+                .project-info {
+                  display: flex;
                   opacity: 1;
                 }
               }
@@ -136,7 +165,7 @@ main {
     height: 300px;
 
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 
