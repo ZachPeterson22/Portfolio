@@ -23,6 +23,13 @@ nav {
   }
 }
 
+.footer-divider {
+  @include borderBlack();
+  border-bottom: none;
+  background-color: $primary-color;
+  height: 50px;
+}
+
 footer {
   @include borderBlack();
   background-color: $secondary-color;

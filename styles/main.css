@@ -24,6 +24,13 @@ nav {
         color: white;
         cursor: default; }
 
+.footer-divider {
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  border-bottom: none;
+  background-color: #71eeb8;
+  height: 50px; }
+
 footer {
   border-top: black 2px solid;
   border-bottom: black 2px solid;
@@ -138,76 +145,90 @@ main .section-c .projects-title {
   text-align: center;
   padding: 5px; }
 
-main .section-c .parallax2 {
-  background-image: url("../images/parallaximg1.jpeg");
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  main .section-c .parallax2 .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.25); }
-    main .section-c .parallax2 .overlay .projects {
+main .section-c .projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 7.5%; }
+  main .section-c .projects .item {
+    border: white 1px solid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 350px; }
+    main .section-c .projects .item .item-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center; }
+      main .section-c .projects .item .item-overlay .project-info-title,
+      main .section-c .projects .item .item-overlay .project-info {
+        color: white; }
+
+main .section-d .d-title {
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  background-color: #71eeb8;
+  font-size: 42px;
+  text-align: center;
+  padding: 5px; }
+
+main .section-d .d-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 7.5%; }
+  main .section-d .d-content .item {
+    margin: 15px;
+    width: 350px; }
+    main .section-d .d-content .item .project {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      background-color: #bbf1d9;
+      border: black 2px solid;
+      border-bottom: black 1px solid;
+      height: 200px;
+      padding: 15px; }
+      main .section-d .d-content .item .project .project-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(255, 51, 51, 0.8); }
+    main .section-d .d-content .item .project-link {
+      display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      padding: 10px 7.5%; }
-      main .section-c .parallax2 .overlay .projects .item {
-        border: white 1px solid;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin: 15px;
-        width: 350px; }
-        main .section-c .parallax2 .overlay .projects .item .item-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 100;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          transition: all 0.5s linear; }
-          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info-title,
-          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info {
-            border: none;
-            color: white;
-            opacity: 0;
-            transition: all 0.5s linear; }
-          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info-title {
-            background-color: black;
-            border-radius: 5px;
-            padding: 5px;
-            font-size: 24px;
-            opacity: 1; }
-          main .section-c .parallax2 .overlay .projects .item .item-overlay .project-info {
-            width: 80%;
-            margin: 0 auto;
-            display: none; }
-          main .section-c .parallax2 .overlay .projects .item .item-overlay:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: space-evenly; }
-            main .section-c .parallax2 .overlay .projects .item .item-overlay:hover .project-info-title {
-              background: none;
-              border-radius: 0;
-              border-bottom: white 1px solid;
-              padding: 0; }
-            main .section-c .parallax2 .overlay .projects .item .item-overlay:hover .project-info {
-              display: flex;
-              opacity: 1; }
+      border: black 2px solid;
+      border-top: black 1px solid;
+      background-color: #bbf1d9;
+      text-align: center;
+      padding: 5px; }
+      main .section-d .d-content .item .project-link a {
+        text-decoration: none; }
 
 main .parallax1 {
-  background-image: url("../images/parallaximg2.jpeg");
+  background-image: url("../images/parallaximg1.jpeg");
   height: 300px;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   main .parallax1 .overlay {
@@ -229,6 +250,31 @@ main .parallax1 {
         background-color: white;
         text-align: center;
         padding: 5px; }
+
+main .parallax2 {
+  background-image: url("../images/parallaximg2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main .parallax2 .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); }
+
+main .project-info-title,
+main .project-info {
+  color: white;
+  z-index: 2; }
+
+main .project-info-title {
+  border-bottom: white 1px solid;
+  padding: 0;
+  font-size: 24px; }
+
+main .project-info {
+  width: 80%;
+  margin: 0 auto; }
 
 @media only screen and (max-width: 600px) {
   main .parallax1 {
